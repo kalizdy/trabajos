@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Morenas Food: comida rápida con sabor paceño en La Paz. Sajta, silpancho, milanesa, pollo a la broaster, caldos y más. Pide delivery o reserva tu mesa.">
+  <meta name="theme-color" content="#211612">
+  <title>Morenas Food | Sabor paceño al toque</title>
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Caveat:wght@600;700&family=DM+Sans:opsz,wght@9..40,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p class="topbar__note"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Sopocachi, La Paz <span class="topbar__sep" aria-hidden="true"></span> Delivery todos los días</p>
+      <div class="topbar__links">
+        <a href="tel:+59171234567"><i class="bi bi-telephone-fill" aria-hidden="true"></i> +591 712 345 67</a>
+        <span class="topbar__sep d-none d-sm-inline" aria-hidden="true"></span>
+        <a href="#reservas" class="d-none d-sm-inline">Reserva tu mesa</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar navbar-expand-lg" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio" aria-label="Morenas Food, ir al inicio">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img">
+              <path d="M17 35h30c-1.2 9.3-6.9 15-15 15s-13.8-5.7-15-15Z" fill="#fff9f0"/>
+              <path d="M15.5 33.5h33" stroke="#fff9f0" stroke-width="3" stroke-linecap="round"/>
+              <path d="M25 25c-2.3-2.2-2.3-5.4 0-7.6M33 25c-2.3-2.2-2.3-5.4 0-7.6M41 25c-2.3-2.2-2.3-5.4 0-7.6" fill="none" stroke="#fff9f0" stroke-width="2.6" stroke-linecap="round"/>
+              <circle cx="47" cy="18" r="4" fill="#f7bd35"/>
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">Morenas</span>
+            <span class="brand-tag">Food · La Paz</span>
+          </span>
+        </a>
+
+        <div class="nav-quick d-flex align-items-center gap-2 d-lg-none">
+          <button class="cart-trigger cart-trigger--icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartDrawer" aria-controls="cartDrawer" aria-label="Abrir mi pedido">
+            <i class="bi bi-bag" aria-hidden="true"></i>
+            <span class="cart-count" data-cart-count>0</span>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reservas">Reservas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <span class="open-pill js-open-status d-none d-xl-inline-flex" aria-live="polite">
+              <span class="open-pill__dot" aria-hidden="true"></span>
+              <span data-open-text>Abierto ahora</span>
+            </span>
+            <button class="cart-trigger d-none d-lg-inline-flex" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartDrawer" aria-controls="cartDrawer" aria-label="Abrir mi pedido">
+              <i class="bi bi-bag" aria-hidden="true"></i>
+              <span>Mi pedido</span>
+              <span class="cart-count" data-cart-count>0</span>
+            </button>
+            <a class="btn btn-brand d-none d-lg-inline-flex" href="#menu">
+              Pedir ahora <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+            <div class="nav-actions__mobile d-lg-none">
+              <a class="btn btn-brand w-100" href="#menu">
+                Ver el menú <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a class="nav-mobile-phone" href="tel:+59171234567"><i class="bi bi-telephone" aria-hidden="true"></i> +591 712 345 67</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero__deco hero__deco--one" aria-hidden="true"></div>
+      <div class="hero__deco hero__deco--two" aria-hidden="true"></div>
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <div class="hero-copy">
+              <p class="eyebrow eyebrow--pill"><span class="eyebrow__dot" aria-hidden="true"></span> Cocina paceña, sin vueltas <span class="eyebrow__hand">¡bien rico!</span></p>
+              <h1>El sabor de <span class="text-nowrap">La Paz,</span><br><span class="hero-highlight">al toque.<span class="hero-underline" aria-hidden="true"><svg viewBox="0 0 250 22" preserveAspectRatio="none"><path d="M4 15C58 5 159 3 245 11" pathLength="1"/></svg></span></span></h1>
+              <p class="hero-lead">Sajta con pique, silpancho bien servido y pollo a la broaster recién hecho. La sazón de casa, lista para llegar a tu puerta.</p>
+
+              <div class="hero-actions">
+                <a class="btn btn-brand btn-lg" href="#menu">Ver el menú <i class="bi bi-arrow-down-right" aria-hidden="true"></i></a>
+                <a class="btn btn-outline-soft btn-lg" href="https://wa.me/59171234567?text=Hola%20Morenas%20Food%2C%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener">
+                  <i class="bi bi-whatsapp" aria-hidden="true"></i> Pedir por WhatsApp
+                </a>
+              </div>
+
+              <div class="hero-proof">
+                <div class="hero-proof__rating">
+                  <span class="stars" aria-hidden="true"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  <span><strong>4.9/5</strong> · +2.500 pedidos felices</span>
+                </div>
+                <span class="hero-proof__divider" aria-hidden="true"></span>
+                <div class="hero-proof__delivery">
+                  <span class="icon-circle icon-circle--sm" aria-hidden="true"><i class="bi bi-bicycle"></i></span>
+                  <span><strong>30–40 min</strong> · Delivery en La Paz</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-visual">
+              <figure class="hero-photo">
+                <img src="hero-morenas.jpg" alt="Pollo broaster crujiente recién hecho, uno de los favoritos de Morenas Food" width="1400" height="934" fetchpriority="high">
+                <figcaption class="hero-status status-pill js-open-status">
+                  <span class="status-pill__dot" aria-hidden="true"></span>
+                  <span data-open-text>Abierto ahora</span>
+                </figcaption>
+              </figure>
+
+              <a class="hero-mini" href="#menu">
+                <img src="sajta-pacena.jpg" alt="" width="96" height="96">
+                <span class="hero-mini__copy">
+                  <small>La favorita de la casa</small>
+                  <strong>Sajta Paceña</strong>
+                </span>
+                <span class="hero-mini__price">Bs 25</span>
+              </a>
+
+              <div class="hero-delivery">
+                <span class="hero-delivery__icon" aria-hidden="true"><i class="bi bi-lightning-charge-fill"></i></span>
+                <span><strong>Llega calentito</strong><small>a tu puerta</small></span>
+              </div>
+
+              <div class="hero-stamp" aria-hidden="true">
+                <span>100%</span>
+                <strong>sabor<br>paceño</strong>
+                <i class="bi bi-asterisk"></i>
+              </div>
+
+              <span class="hero-spark hero-spark--one" aria-hidden="true">✦</span>
+              <span class="hero-spark hero-spark--two" aria-hidden="true">✦</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-strip">
+          <div class="service-strip__item">
+            <span class="icon-circle" aria-hidden="true"><i class="bi bi-bicycle"></i></span>
+            <span><strong>Delivery a domicilio</strong><small>Llegamos a toda La Paz</small></span>
+          </div>
+          <div class="service-strip__item">
+            <span class="icon-circle" aria-hidden="true"><i class="bi bi-fire"></i></span>
+            <span><strong>Hecho al momento</strong><small>Sin atajos, con sazón</small></span>
+          </div>
+          <div class="service-strip__item">
+            <span class="icon-circle" aria-hidden="true"><i class="bi bi-phone"></i></span>
+            <span><strong>Pide en 2 minutos</strong><small>Por la web o WhatsApp</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Sajta paceña</span><i class="bi bi-asterisk"></i><span>Silpancho</span><i class="bi bi-asterisk"></i><span>Pollo a la broaster</span><i class="bi bi-asterisk"></i><span>Milanesa</span><i class="bi bi-asterisk"></i><span>Caldo de pollo</span><i class="bi bi-asterisk"></i><span>Chicharrón</span><i class="bi bi-asterisk"></i>
+        <span>Sajta paceña</span><i class="bi bi-asterisk"></i><span>Silpancho</span><i class="bi bi-asterisk"></i><span>Pollo a la broaster</span><i class="bi bi-asterisk"></i><span>Milanesa</span><i class="bi bi-asterisk"></i><span>Caldo de pollo</span><i class="bi bi-asterisk"></i><span>Chicharrón</span><i class="bi bi-asterisk"></i>
+      </div>
+    </div>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span> Directo de nuestra cocina</p>
+            <h2>Antojos que hablan<br><span class="text-accent">paceño.</span></h2>
+          </div>
+          <p class="section-head__lead">Elige tu favorito y nosotros nos encargamos del resto. Todo se prepara al momento, con el picante bien medido.</p>
+        </div>
+
+        <div class="menu-toolbar reveal">
+          <div class="filter-wrap" id="menuFilters" role="group" aria-label="Filtrar el menú por categoría">
+            <button class="filter-chip is-active" type="button" data-filter="todos" aria-pressed="true">Todo</button>
+            <button class="filter-chip" type="button" data-filter="pacenos" aria-pressed="false">Paceños</button>
+            <button class="filter-chip" type="button" data-filter="pollo" aria-pressed="false">Pollo</button>
+            <button class="filter-chip" type="button" data-filter="caldos" aria-pressed="false">Caldos</button>
+            <button class="filter-chip" type="button" data-filter="picar" aria-pressed="false">Para picar</button>
+            <button class="filter-chip" type="button" data-filter="combos" aria-pressed="false">Combos</button>
+            <span class="filter-divider" aria-hidden="true"></span>
+            <button class="filter-chip filter-chip--fav" type="button" data-filter="favoritos" aria-pressed="false"><i class="bi bi-heart-fill" aria-hidden="true"></i> Favoritos</button>
+          </div>
+
+          <div class="menu-search">
+            <i class="bi bi-search" aria-hidden="true"></i>
+            <label class="visually-hidden" for="menuSearch">Buscar en el menú</label>
+            <input id="menuSearch" type="search" placeholder="Busca sajta, pollo..." autocomplete="off">
+            <button id="clearSearch" class="menu-search__clear" type="button" aria-label="Borrar búsqueda" hidden><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+          </div>
+        </div>
+
+        <div class="menu-meta reveal">
+          <p id="menuResults" aria-live="polite">9 platos para elegir</p>
+          <p class="menu-meta__note"><i class="bi bi-fire" aria-hidden="true"></i> El ají va aparte para que lo pongas a tu gusto.</p>
+        </div>
+
+        <div class="row g-4" id="menuGrid"></div>
+
+        <div id="menuEmpty" class="menu-empty" hidden>
+          <span class="menu-empty__icon" aria-hidden="true"><i class="bi bi-search-heart"></i></span>
+          <h3>No encontramos ese antojo</h3>
+          <p>Prueba con otra palabra o revisa las categorías. Seguro algo rico te espera.</p>
+          <button class="btn btn-outline-soft" type="button" id="resetMenuBtn">Ver todo el menú</button>
+        </div>
+
+        <div class="menu-bottom reveal">
+          <p><i class="bi bi-info-circle" aria-hidden="true"></i> Precios en bolivianos. Delivery gratis desde Bs 80.</p>
+          <a class="menu-bottom__link" href="https://wa.me/59171234567?text=Hola%20Morenas%20Food%2C%20quisiera%20consultar%20el%20men%C3%BA%20del%20d%C3%ADa." target="_blank" rel="noopener">Consultar el menú del día <i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="combo-section" aria-labelledby="comboTitle">
+      <div class="container">
+        <div class="combo-card reveal">
+          <img class="combo-card__image" src="combo-morenas.jpg" alt="Presas de pollo broaster doradas y crujientes para compartir" width="1400" height="934" loading="lazy">
+          <div class="combo-card__overlay" aria-hidden="true"></div>
+          <div class="combo-card__content">
+            <p class="eyebrow eyebrow--light">Para compartir · o no</p>
+            <h2 id="comboTitle">El combo que<br><span class="text-script">nunca falla.</span></h2>
+            <p class="combo-card__lead">Ocho presas de pollo a la broaster, papas doradas, arroz, ensalada fresca y cuatro refrescos. Ideal para la junta, la oficina o el antojo en equipo.</p>
+            <ul class="combo-card__list">
+              <li><i class="bi bi-check2" aria-hidden="true"></i> 8 presas crujientes</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Papas + arroz</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> 4 refrescos</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Salsas de la casa</li>
+            </ul>
+            <div class="combo-card__buy">
+              <div class="combo-price">
+                <span class="combo-price__old">Antes Bs 101</span>
+                <strong>Bs 89</strong>
+              </div>
+              <button class="btn btn-light btn-lg" type="button" data-add-id="combo-morenas">
+                Sumar al pedido <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <span class="combo-sticker" aria-label="Ahorras 12 bolivianos">Ahorra<br><strong>Bs 12</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="nosotros">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <div class="about-visual reveal">
+              <figure class="about-photo">
+                <img src="local-morenas.jpg" alt="Ambiente cálido y acogedor del restaurante Morenas Food" width="1400" height="1050" loading="lazy">
+              </figure>
+              <div class="about-note">
+                <span class="about-note__mark" aria-hidden="true">“</span>
+                <p>El secreto está en la sazón de casa.</p>
+                <span class="text-script">Familia Morenas</span>
+              </div>
+              <div class="about-years">
+                <strong>8+</strong>
+                <span>años<br>de sabor</span>
+              </div>
+              <span class="about-sticker" aria-hidden="true"><i class="bi bi-egg-fried"></i> Cocina abierta</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-copy reveal">
+              <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span> Nuestra historia</p>
+              <h2>Una receta de familia,<br>servida <span class="text-accent">bien caliente.</span></h2>
+              <p class="about-copy__lead">Morenas Food nació en una cocina de barrio con una idea simple: que la comida rápida también puede tener alma y sabor de casa.</p>
+              <p>Desde 2018 preparamos cada plato como si fuera para nuestra propia mesa. El ají se muele cada mañana, las papas se cortan al momento y el pollo se sazona con esa mezcla que ya es parte de la familia.</p>
+
+              <div class="value-grid">
+                <div class="value-item">
+                  <span class="icon-circle" aria-hidden="true"><i class="bi bi-heart"></i></span>
+                  <h3>Sazón casera</h3>
+                  <p>Recetas paceñas que pasan de generación en generación.</p>
+                </div>
+                <div class="value-item">
+                  <span class="icon-circle" aria-hidden="true"><i class="bi bi-basket"></i></span>
+                  <h3>Ingredientes frescos</h3>
+                  <p>Compramos cada día en los mercados de la ciudad.</p>
+                </div>
+                <div class="value-item">
+                  <span class="icon-circle" aria-hidden="true"><i class="bi bi-lightning"></i></span>
+                  <h3>Rápido, de verdad</h3>
+                  <p>Tu pedido sale caliente y a tiempo. Sin vueltas.</p>
+                </div>
+              </div>
+
+              <div class="about-signature">
+                <span class="signature-line" aria-hidden="true"></span>
+                <p>Con cariño, desde La Paz <i class="bi bi-suit-heart-fill" aria-hidden="true"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section" aria-labelledby="reviewsTitle">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow eyebrow--center"><span class="eyebrow__line" aria-hidden="true"></span> Palabra de cliente <span class="eyebrow__line" aria-hidden="true"></span></p>
+          <h2 id="reviewsTitle">Nos siguen por el <span class="text-accent">sabor.</span></h2>
+          <p class="section-head__lead">Y por esas ganas de volver por más. Estas son algunas de las cosas que nos dicen.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="review-card reveal">
+              <div class="review-card__top">
+                <span class="stars stars--dark" aria-label="5 de 5 estrellas"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                <i class="bi bi-quote review-card__quote" aria-hidden="true"></i>
+              </div>
+              <blockquote>“La sajta me transportó a la comida de mi abuela. El pique justo y el delivery llegó calentito.</blockquote>
+              <div class="review-card__author">
+                <span class="avatar avatar--peach">VM</span>
+                <span><strong>Valeria M.</strong><small>Cliente desde 2021</small></span>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="review-card review-card--featured reveal">
+              <div class="review-card__top">
+                <span class="stars" aria-label="5 de 5 estrellas"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                <i class="bi bi-quote review-card__quote" aria-hidden="true"></i>
+              </div>
+              <blockquote>“El silpancho es enorme, el arroz perfecto y la atención de diez. Ya soy cliente fijo de los viernes.</blockquote>
+              <div class="review-card__author">
+                <span class="avatar avatar--yellow">DR</span>
+                <span><strong>Diego R.</strong><small>Cliente desde 2019</small></span>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="review-card reveal">
+              <div class="review-card__top">
+                <span class="stars stars--dark" aria-label="5 de 5 estrellas"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                <i class="bi bi-quote review-card__quote" aria-hidden="true"></i>
+              </div>
+              <blockquote>“Pedimos el combo para la oficina y no sobró ni una papa. El pollo broaster es otro nivel.</blockquote>
+              <div class="review-card__author">
+                <span class="avatar avatar--green">CT</span>
+                <span><strong>Carla T.</strong><small>Cliente desde 2022</small></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reservation-section" id="reservas">
+      <div class="container">
+        <div class="reserve-shell reveal">
+          <div class="row g-0">
+            <div class="col-lg-5">
+              <div class="reserve-info">
+                <p class="eyebrow eyebrow--light">Reservas</p>
+                <h2>Tu mesa, tu gente,<br><span class="text-script">tu sazón.</span></h2>
+                <p>¿Cumpleaños, almuerzo de equipo o una cena sin apuro? Aparta tu mesa y nosotros ponemos la comida.</p>
+
+                <ul class="reserve-perks">
+                  <li><span><i class="bi bi-check2" aria-hidden="true"></i></span> Atención de 11:30 a 22:30, todos los días.</li>
+                  <li><span><i class="bi bi-check2" aria-hidden="true"></i></span> Grupos de hasta 12 personas en línea.</li>
+                  <li><span><i class="bi bi-check2" aria-hidden="true"></i></span> Te confirmamos por WhatsApp en minutos.</li>
+                </ul>
+
+                <div class="reserve-info__contact">
+                  <a href="tel:+59171234567">
+                    <span class="icon-circle icon-circle--light" aria-hidden="true"><i class="bi bi-telephone"></i></span>
+                    <span><small>Llámanos</small><strong>+591 712 345 67</strong></span>
+                  </a>
+                  <a href="https://wa.me/59171234567?text=Hola%20Morenas%20Food%2C%20quiero%20reservar%20una%20mesa." target="_blank" rel="noopener">
+                    <span class="icon-circle icon-circle--light" aria-hidden="true"><i class="bi bi-whatsapp"></i></span>
+                    <span><small>Escríbenos</small><strong>Reserva por WhatsApp</strong></span>
+                  </a>
+                </div>
+
+                <div class="reserve-info__hours">
+                  <i class="bi bi-clock" aria-hidden="true"></i>
+                  <span><strong>Hoy</strong><span data-open-text>Consulta nuestro horario</span></span>
+                </div>
+                <span class="reserve-info__watermark" aria-hidden="true">MESA</span>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="reserve-form-panel">
+                <div id="reservationFormWrap">
+                  <div class="form-panel-head">
+                    <div>
+                      <p class="eyebrow">Reserva tu mesa</p>
+                      <h3>Toma asiento. Nosotros cocinamos.</h3>
+                    </div>
+                    <span class="form-panel-icon" aria-hidden="true"><i class="bi bi-calendar2-heart"></i></span>
+                  </div>
+                  <p class="form-panel-sub">Completa tus datos y te confirmamos la disponibilidad por WhatsApp.</p>
+
+                  <form id="reservationForm" novalidate>
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <div class="field">
+                          <label class="form-label" for="resName">Nombre completo <span class="req">*</span></label>
+                          <input class="form-control" id="resName" name="name" type="text" autocomplete="name" placeholder="Ej. Ana Quispe" data-rule="name" aria-describedby="err-resName" required>
+                          <p class="field-error" id="err-resName"></p>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="field">
+                          <label class="form-label" for="resPhone">Celular <span class="req">*</span></label>
+                          <div class="input-group phone-group">
+                            <span class="input-group-text">+591</span>
+                            <input class="form-control js-phone" id="resPhone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="8" pattern="[67][0-9]{7}" placeholder="71234567" data-rule="phone" aria-describedby="resPhoneHelp err-resPhone" required>
+                          </div>
+                          <p class="field-hint" id="resPhoneHelp">8 dígitos, sin 0 ni +591.</p>
+                          <p class="field-error" id="err-resPhone"></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="field">
+                      <label class="form-label" for="resEmail">Correo electrónico <span class="req">*</span></label>
+                      <input class="form-control" id="resEmail" name="email" type="email" autocomplete="email" placeholder="ana@correo.com" data-rule="email" aria-describedby="err-resEmail" required>
+                      <p class="field-error" id="err-resEmail"></p>
+                    </div>
+
+                    <div class="row g-3">
+                      <div class="col-md-4">
+                        <div class="field">
+                          <label class="form-label" for="resDate">Fecha <span class="req">*</span></label>
+                          <input class="form-control" id="resDate" name="date" type="date" data-rule="reservationDate" aria-describedby="resDateHelp err-resDate" required>
+                          <p class="field-hint" id="resDateHelp">Hasta 90 días de anticipación.</p>
+                          <p class="field-error" id="err-resDate"></p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="field">
+                          <label class="form-label" for="resTime">Hora <span class="req">*</span></label>
+                          <select class="form-select" id="resTime" name="time" data-rule="reservationTime" aria-describedby="err-resTime" required>
+                            <option value="">Elige una hora</option>
+                          </select>
+                          <p class="field-error" id="err-resTime"></p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="field">
+                          <label class="form-label" for="resPeople">Personas <span class="req">*</span></label>
+                          <input class="form-control" id="resPeople" name="people" type="number" inputmode="numeric" min="1" max="12" step="1" placeholder="4" data-rule="people" aria-describedby="err-resPeople" required>
+                          <p class="field-error" id="err-resPeople"></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="field">
+                      <label class="form-label" for="resOccasion">¿Es una ocasión especial? <span class="optional">(opcional)</span></label>
+                      <select class="form-select" id="resOccasion" name="occasion" data-rule="occasion" aria-describedby="err-resOccasion">
+                        <option value="">Sin ocasión especial</option>
+                        <option value="cumpleanos">Cumpleaños</option>
+                        <option value="aniversario">Aniversario</option>
+                        <option value="familia">Reunión familiar</option>
+                        <option value="trabajo">Almuerzo de trabajo</option>
+                        <option value="otro">Otro motivo</option>
+                      </select>
+                      <p class="field-error" id="err-resOccasion"></p>
+                    </div>
+
+                    <div class="field">
+                      <div class="label-row">
+                        <label class="form-label" for="resNotes">Comentarios <span class="optional">(opcional)</span></label>
+                        <span class="char-count" id="resNotesCount">0/200</span>
+                      </div>
+                      <textarea class="form-control" id="resNotes" name="notes" rows="3" maxlength="200" placeholder="Alergias, silla para bebé, decoración..." data-rule="notes" data-counter-for="resNotes" aria-describedby="err-resNotes"></textarea>
+                      <p class="field-error" id="err-resNotes"></p>
+                    </div>
+
+                    <div class="field field--check">
+                      <div class="form-check custom-check">
+                        <input class="form-check-input" id="resTerms" name="terms" type="checkbox" data-rule="terms" aria-describedby="err-resTerms" required>
+                        <label class="form-check-label" for="resTerms">Acepto que Morenas Food me contacte para confirmar mi reserva. <span class="req">*</span></label>
+                      </div>
+                      <p class="field-error" id="err-resTerms"></p>
+                    </div>
+
+                    <button class="btn btn-brand btn-lg w-100" type="submit">
+                      Quiero mi mesa <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                    </button>
+                    <p class="form-footnote"><i class="bi bi-shield-check" aria-hidden="true"></i> Tu solicitud no se cobra. Coordinamos todo por WhatsApp.</p>
+                  </form>
+                </div>
+
+                <div class="reservation-success" id="reservationSuccess" role="status" tabindex="-1" hidden>
+                  <span class="success-mark" aria-hidden="true"><i class="bi bi-check-lg"></i></span>
+                  <p class="eyebrow">Solicitud registrada</p>
+                  <h3>¡Tu mesa está casi lista!</h3>
+                  <p id="resSuccessText"></p>
+                  <div class="success-ticket" id="resSuccessTicket"></div>
+                  <div class="success-actions">
+                    <a class="btn btn-brand" id="resSuccessWhatsapp" href="#" target="_blank" rel="noopener"><i class="bi bi-whatsapp" aria-hidden="true"></i> Enviar por WhatsApp</a>
+                    <button class="btn btn-outline-soft" type="button" id="newReservationBtn">Hacer otra reserva</button>
+                  </div>
+                  <p class="form-footnote">También puedes llamarnos al <a href="tel:+59171234567">+591 712 345 67</a>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" aria-labelledby="faqTitle">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <div class="faq-intro reveal">
+              <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span> Antes de pedir</p>
+              <h2 id="faqTitle">Preguntas<br><span class="text-accent">frecuentes.</span></h2>
+              <p class="section-head__lead">Todo lo que necesitas saber para pedir, reservar y disfrutar sin sorpresas.</p>
+              <div class="faq-help">
+                <span class="faq-help__icon" aria-hidden="true"><i class="bi bi-chat-dots"></i></span>
+                <div>
+                  <strong>¿Tienes otra duda?</strong>
+                  <p>Escríbenos y te respondemos al toque.</p>
+                  <a href="https://wa.me/59171234567?text=Hola%20Morenas%20Food%2C%20tengo%20una%20consulta." target="_blank" rel="noopener">Hablar por WhatsApp <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="accordion faq-accordion reveal" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">¿A qué zonas llega el delivery?</button>
+                </h3>
+                <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Llegamos a Sopocachi, Centro, Miraflores, San Jorge, San Miguel, Obrajes, Calacoto y zonas cercanas de La Paz. Si tienes dudas sobre tu zona, escríbenos por WhatsApp y lo revisamos juntos.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">¿Cuánto tarda mi pedido en llegar?</button>
+                </h3>
+                <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Entre 30 y 45 minutos, dependiendo de la zona y de la hora. Todo se prepara al momento, así que tu comida sale caliente de la cocina. Si eliges recojo, estará listo en 20 a 30 minutos.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">¿Puedo pedir sin picante?</button>
+                </h3>
+                <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Claro. El ají se sirve aparte en la mayoría de nuestros platos. Solo indícanos en el campo de comentarios si lo quieres suave, medio o bien pique. Nosotros lo ajustamos.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">¿Cómo puedo pagar mi pedido?</button>
+                </h3>
+                <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Aceptamos efectivo contra entrega, QR simple y transferencia bancaria. Al finalizar tu pedido eliges el método y te compartimos los datos para completar el pago.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">¿Puedo reservar para grupos grandes?</button>
+                </h3>
+                <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">El formulario acepta grupos de hasta 12 personas. Si son más, escríbenos por WhatsApp y armamos una mesa especial para ustedes, con la comida lista a la hora que lleguen.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow eyebrow--center"><span class="eyebrow__line" aria-hidden="true"></span> Ven a comer <span class="eyebrow__line" aria-hidden="true"></span></p>
+          <h2 id="contactTitle">Estamos a un <span class="text-accent">antojo</span> de distancia.</h2>
+          <p class="section-head__lead">Pásate por Sopocachi, recoge tu pedido o pídelo a domicilio. Nosotros ponemos la sazón.</p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7">
+            <div class="map-card reveal">
+              <img class="map-card__image" src="mapa-sopocachi.jpg" alt="Mapa referencial de Sopocachi, La Paz, con la ubicación de Morenas Food" width="1000" height="600" loading="lazy">
+              <span class="map-card__shade" aria-hidden="true"></span>
+              <div class="map-card__badge"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Sopocachi · La Paz</div>
+              <span class="map-card__pin" aria-hidden="true"><i class="bi bi-geo-alt-fill"></i></span>
+              <a class="map-card__link" href="https://www.google.com/maps/search/?api=1&amp;query=-16.5095,-68.1290" target="_blank" rel="noopener">Abrir en Google Maps <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+              <a class="map-card__credit" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="contact-card reveal">
+              <p class="eyebrow">Encuéntranos</p>
+              <h3>Más cerca de lo que crees.</h3>
+              <ul class="contact-list">
+                <li>
+                  <span class="icon-circle" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                  <span><strong>Dirección</strong><small>Av. 6 de Agosto #2145,<br>Sopocachi, La Paz</small></span>
+                </li>
+                <li>
+                  <span class="icon-circle" aria-hidden="true"><i class="bi bi-clock"></i></span>
+                  <span><strong>Horario</strong><small>Lunes a domingo<br>11:30 — 22:30</small></span>
+                </li>
+                <li>
+                  <span class="icon-circle" aria-hidden="true"><i class="bi bi-telephone"></i></span>
+                  <span><strong>Teléfono y WhatsApp</strong><small><a href="tel:+59171234567">+591 712 345 67</a><br>Pedidos y reservas</small></span>
+                </li>
+              </ul>
+              <div class="contact-actions">
+                <a class="btn btn-brand" href="https://wa.me/59171234567?text=Hola%20Morenas%20Food%2C%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener"><i class="bi bi-whatsapp" aria-hidden="true"></i> Escribir por WhatsApp</a>
+                <a class="btn btn-outline-soft" href="tel:+59171234567"><i class="bi bi-telephone" aria-hidden="true"></i> Llamar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="navbar-brand navbar-brand--footer" href="#inicio" aria-label="Morenas Food, ir al inicio">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <path d="M17 35h30c-1.2 9.3-6.9 15-15 15s-13.8-5.7-15-15Z" fill="#fff9f0"/>
+                <path d="M15.5 33.5h33" stroke="#fff9f0" stroke-width="3" stroke-linecap="round"/>
+                <path d="M25 25c-2.3-2.2-2.3-5.4 0-7.6M33 25c-2.3-2.2-2.3-5.4 0-7.6M41 25c-2.3-2.2-2.3-5.4 0-7.6" fill="none" stroke="#fff9f0" stroke-width="2.6" stroke-linecap="round"/>
+                <circle cx="47" cy="18" r="4" fill="#f7bd35"/>
+              </svg>
+            </span>
+            <span class="brand-copy">
+              <span class="brand-name">Morenas</span>
+              <span class="brand-tag">Food · La Paz</span>
+            </span>
+          </a>
+          <p>Comida rápida con sazón de casa. Hecha en La Paz, para los que disfrutan comer rico sin esperar de más.</p>
+          <div class="social-links" aria-label="Redes sociales de Morenas Food">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram de Morenas Food"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook de Morenas Food"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok de Morenas Food"><i class="bi bi-tiktok" aria-hidden="true"></i></a>
+            <a href="https://wa.me/59171234567" target="_blank" rel="noopener" aria-label="WhatsApp de Morenas Food"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explora</h3>
+          <ul class="footer-links">
+            <li><a href="#menu">Nuestro menú</a></li>
+            <li><a href="#nosotros">Nuestra historia</a></li>
+            <li><a href="#reservas">Reservar mesa</a></li>
+            <li><a href="#contacto">Cómo llegar</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Horarios</h3>
+          <ul class="footer-info">
+            <li><span>Lunes a jueves</span><strong>11:30 — 22:30</strong></li>
+            <li><span>Viernes y sábado</span><strong>11:30 — 22:30</strong></li>
+            <li><span>Domingo</span><strong>11:30 — 22:30</strong></li>
+            <li class="footer-info__delivery"><i class="bi bi-bicycle" aria-hidden="true"></i> Delivery hasta las 22:00</li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-news">
+          <h3>Club Morenas</h3>
+          <p>Promos, novedades y el menú del día antes que nadie.</p>
+          <form id="newsletterForm" novalidate>
+            <label class="visually-hidden" for="newsletterEmail">Correo electrónico</label>
+            <div class="newsletter-group">
+              <input class="form-control" id="newsletterEmail" name="email" type="email" autocomplete="email" placeholder="tu@correo.com" data-rule="email" aria-describedby="err-newsletterEmail" required>
+              <button class="btn btn-brand" type="submit" aria-label="Suscribirme al club Morenas"><i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+            </div>
+            <p class="field-error" id="err-newsletterEmail"></p>
+            <p class="newsletter-success" id="newsletterSuccess" role="status" hidden><i class="bi bi-check-circle-fill" aria-hidden="true"></i> ¡Listo! Te escribiremos con las mejores promos.</p>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> Morenas Food. Todos los derechos reservados.</p>
+        <div class="footer-bottom__links">
+          <button class="link-button" type="button" data-bs-toggle="modal" data-bs-target="#creditsModal">Créditos de imágenes</button>
+          <a href="#reservas">Reservas</a>
+        </div>
+        <p class="footer-made">Hecho con sazón en La Paz <i class="bi bi-suit-heart-fill" aria-hidden="true"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Carrito -->
+  <div class="offcanvas offcanvas-end cart-drawer" tabindex="-1" id="cartDrawer" aria-labelledby="cartDrawerTitle">
+    <div class="offcanvas-header">
+      <div>
+        <p class="eyebrow">Tu pedido</p>
+        <h2 id="cartDrawerTitle">La bolsa morena</h2>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar carrito"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="cart-empty" id="cartEmpty">
+        <span class="cart-empty__icon" aria-hidden="true"><i class="bi bi-bag"></i></span>
+        <h3>Tu bolsa está vacía</h3>
+        <p>Se nota que todavía no probaste la sajta. Agrega algo rico y vuelve por aquí.</p>
+        <a class="btn btn-brand" href="#menu" data-bs-dismiss="offcanvas">Ver el menú <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+      </div>
+
+      <div id="cartContent" hidden>
+        <ul class="cart-items" id="cartItems" aria-label="Productos en tu pedido"></ul>
+        <div class="free-delivery" id="freeDeliveryBox">
+          <div class="free-delivery__top">
+            <p id="freeDeliveryText">Agrega Bs 80 más y el delivery va por nuestra cuenta.</p>
+            <i class="bi bi-bicycle" aria-hidden="true"></i>
+          </div>
+          <div class="free-delivery__bar"><span id="freeDeliveryBar"></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas-footer" id="cartFooter" hidden>
+      <div class="cart-total-row">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">Bs 0</strong>
+      </div>
+      <p class="cart-hint">El delivery se calcula al finalizar tu pedido.</p>
+      <button class="btn btn-brand btn-lg w-100" type="button" id="checkoutBtn">
+        Continuar con el pedido <i class="bi bi-arrow-right" aria-hidden="true"></i>
+      </button>
+      <p class="cart-secure"><i class="bi bi-shield-check" aria-hidden="true"></i> Pago seguro, sin datos de tarjeta.</p>
+    </div>
+  </div>
+
+  <!-- Checkout -->
+  <div class="modal fade checkout-modal" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <p class="eyebrow">Último paso</p>
+            <h2 class="modal-title" id="checkoutTitle">Finaliza tu pedido</h2>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4">
+            <div class="col-lg-7">
+              <form id="checkoutForm" novalidate>
+                <div class="form-step">
+                  <span class="form-step__num">1</span>
+                  <div><h3>Datos de contacto</h3><p>Para avisarte cuando salga tu pedido.</p></div>
+                </div>
+
+                <div class="row g-3">
+                  <div class="col-md-7">
+                    <div class="field">
+                      <label class="form-label" for="coName">Nombre completo <span class="req">*</span></label>
+                      <input class="form-control" id="coName" name="name" type="text" autocomplete="name" placeholder="Ej. Ana Quispe" data-rule="name" aria-describedby="err-coName" required>
+                      <p class="field-error" id="err-coName"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="field">
+                      <label class="form-label" for="coPhone">Celular <span class="req">*</span></label>
+                      <div class="input-group phone-group">
+                        <span class="input-group-text">+591</span>
+                        <input class="form-control js-phone" id="coPhone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="8" pattern="[67][0-9]{7}" placeholder="71234567" data-rule="phone" aria-describedby="err-coPhone" required>
+                      </div>
+                      <p class="field-error" id="err-coPhone"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="form-label" for="coEmail">Correo electrónico <span class="req">*</span></label>
+                  <input class="form-control" id="coEmail" name="email" type="email" autocomplete="email" placeholder="ana@correo.com" data-rule="email" aria-describedby="err-coEmail" required>
+                  <p class="field-error" id="err-coEmail"></p>
+                </div>
+
+                <div class="form-step">
+                  <span class="form-step__num">2</span>
+                  <div><h3>¿Cómo lo quieres recibir?</h3><p>Delivery a tu puerta o recojo en Sopocachi.</p></div>
+                </div>
+
+                <fieldset class="field fieldset-choice" data-rule="deliveryMethod" aria-describedby="err-deliveryMethod">
+                  <legend class="form-label">Tipo de entrega <span class="req">*</span></legend>
+                  <div class="choice-grid">
+                    <label class="choice">
+                      <input type="radio" name="deliveryMethod" value="delivery" checked>
+                      <span class="choice__card">
+                        <span class="choice__icon" aria-hidden="true"><i class="bi bi-bicycle"></i></span>
+                        <span class="choice__copy"><strong>Delivery</strong><small>30–45 min · desde Bs 8</small></span>
+                        <span class="choice__dot" aria-hidden="true"></span>
+                      </span>
+                    </label>
+                    <label class="choice">
+                      <input type="radio" name="deliveryMethod" value="pickup">
+                      <span class="choice__card">
+                        <span class="choice__icon" aria-hidden="true"><i class="bi bi-bag-check"></i></span>
+                        <span class="choice__copy"><strong>Recojo</strong><small>20–30 min · sin costo</small></span>
+                        <span class="choice__dot" aria-hidden="true"></span>
+                      </span>
+                    </label>
+                  </div>
+                  <p class="field-error" id="err-deliveryMethod"></p>
+                </fieldset>
+
+                <div id="deliveryFields">
+                  <div class="row g-3">
+                    <div class="col-md-5">
+                      <div class="field">
+                        <label class="form-label" for="coZone">Zona <span class="req">*</span></label>
+                        <select class="form-select" id="coZone" name="zone" data-rule="zone" aria-describedby="err-coZone" required>
+                          <option value="">Elige tu zona</option>
+                          <option value="Sopocachi">Sopocachi</option>
+                          <option value="Centro">Centro</option>
+                          <option value="Miraflores">Miraflores</option>
+                          <option value="San Jorge">San Jorge</option>
+                          <option value="San Miguel">San Miguel</option>
+                          <option value="Obrajes">Obrajes</option>
+                          <option value="Calacoto">Calacoto</option>
+                          <option value="Villa Fátima">Villa Fátima</option>
+                          <option value="El Alto">El Alto</option>
+                          <option value="Otra zona">Otra zona</option>
+                        </select>
+                        <p class="field-error" id="err-coZone"></p>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="field">
+                        <label class="form-label" for="coAddress">Dirección <span class="req">*</span></label>
+                        <input class="form-control" id="coAddress" name="address" type="text" autocomplete="street-address" placeholder="Calle, número, edificio..." data-rule="address" aria-describedby="err-coAddress" required>
+                        <p class="field-error" id="err-coAddress"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-step">
+                  <span class="form-step__num">3</span>
+                  <div><h3>Método de pago</h3><p>Elige cómo quieres pagar al recibir.</p></div>
+                </div>
+
+                <fieldset class="field fieldset-choice" data-rule="paymentMethod" aria-describedby="err-paymentMethod">
+                  <legend class="form-label">Forma de pago <span class="req">*</span></legend>
+                  <div class="choice-grid choice-grid--three">
+                    <label class="choice">
+                      <input type="radio" name="paymentMethod" value="Efectivo">
+                      <span class="choice__card">
+                        <span class="choice__icon" aria-hidden="true"><i class="bi bi-cash-stack"></i></span>
+                        <span class="choice__copy"><strong>Efectivo</strong><small>Contra entrega</small></span>
+                        <span class="choice__dot" aria-hidden="true"></span>
+                      </span>
+                    </label>
+                    <label class="choice">
+                      <input type="radio" name="paymentMethod" value="QR simple">
+                      <span class="choice__card">
+                        <span class="choice__icon" aria-hidden="true"><i class="bi bi-qr-code"></i></span>
+                        <span class="choice__copy"><strong>QR simple</strong><small>Te enviamos el código</small></span>
+                        <span class="choice__dot" aria-hidden="true"></span>
+                      </span>
+                    </label>
+                    <label class="choice">
+                      <input type="radio" name="paymentMethod" value="Transferencia">
+                      <span class="choice__card">
+                        <span class="choice__icon" aria-hidden="true"><i class="bi bi-bank"></i></span>
+                        <span class="choice__copy"><strong>Transferencia</strong><small>Datos por WhatsApp</small></span>
+                        <span class="choice__dot" aria-hidden="true"></span>
+                      </span>
+                    </label>
+                  </div>
+                  <p class="field-error" id="err-paymentMethod"></p>
+                </fieldset>
+
+                <div class="field">
+                  <div class="label-row">
+                    <label class="form-label" for="coNotes">Comentarios <span class="optional">(opcional)</span></label>
+                    <span class="char-count" id="coNotesCount">0/160</span>
+                  </div>
+                  <textarea class="form-control" id="coNotes" name="notes" rows="2" maxlength="160" placeholder="Sin cebolla, ají aparte, referencia del edificio..." data-rule="notes" data-counter-for="coNotes" aria-describedby="err-coNotes"></textarea>
+                  <p class="field-error" id="err-coNotes"></p>
+                </div>
+
+                <div class="field field--check">
+                  <div class="form-check custom-check">
+                    <input class="form-check-input" id="coTerms" name="terms" type="checkbox" data-rule="terms" aria-describedby="err-coTerms" required>
+                    <label class="form-check-label" for="coTerms">Confirmo que mis datos están correctos y acepto ser contactado para coordinar el pedido. <span class="req">*</span></label>
+                  </div>
+                  <p class="field-error" id="err-coTerms"></p>
+                </div>
+
+                <button class="btn btn-brand btn-lg w-100" type="submit" id="confirmOrderBtn">
+                  Confirmar pedido <span id="confirmOrderTotal">Bs 0</span>
+                </button>
+                <p class="form-footnote"><i class="bi bi-whatsapp" aria-hidden="true"></i> Al confirmar, podrás enviar el resumen por WhatsApp para terminar de coordinar.</p>
+              </form>
+            </div>
+
+            <div class="col-lg-5">
+              <aside class="order-summary">
+                <div class="order-summary__head">
+                  <p class="eyebrow">Resumen</p>
+                  <h3>Tu pedido</h3>
+                </div>
+                <ul class="summary-items" id="summaryItems"></ul>
+                <div class="summary-totals">
+                  <div class="summary-line"><span>Subtotal</span><strong id="sumSubtotal">Bs 0</strong></div>
+                  <div class="summary-line"><span>Delivery</span><strong id="sumDelivery">Bs 0</strong></div>
+                  <div class="summary-line summary-line--total"><span>Total</span><strong id="sumTotal">Bs 0</strong></div>
+                </div>
+                <div class="summary-eta"><i class="bi bi-clock-history" aria-hidden="true"></i><span>Tiempo estimado<br><strong id="sumEta">30–45 min</strong></span></div>
+                <div class="summary-note"><i class="bi bi-info-circle" aria-hidden="true"></i> Delivery gratis en pedidos desde Bs 80.</div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirmación del pedido -->
+  <div class="modal fade success-modal" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="success-mark" aria-hidden="true"><i class="bi bi-check-lg"></i></span>
+          <p class="eyebrow">Pedido registrado</p>
+          <h2 id="orderSuccessTitle">¡Gracias, <span id="successName">moreno</span>!</h2>
+          <p class="success-lead">Ya tenemos tu pedido. Para confirmarlo, envíanos el resumen por WhatsApp y coordinamos la entrega.</p>
+          <div class="order-code"><span>N.º de pedido</span><strong id="successNumber">MF-0000</strong></div>
+          <ul class="success-summary" id="successSummary"></ul>
+          <div class="success-meta">
+            <div><small>Total</small><strong id="successTotal">Bs 0</strong></div>
+            <div><small>Entrega</small><strong id="successMethod">Delivery</strong></div>
+            <div><small>Tiempo</small><strong id="successEta">30–45 min</strong></div>
+          </div>
+          <a class="btn btn-brand btn-lg w-100" id="successWhatsapp" href="#" target="_blank" rel="noopener"><i class="bi bi-whatsapp" aria-hidden="true"></i> Enviar pedido por WhatsApp</a>
+          <button class="btn btn-outline-soft w-100 mt-2" type="button" data-bs-dismiss="modal">Seguir explorando</button>
+          <p class="form-footnote">¿Algo está mal? Llámanos al <a href="tel:+59171234567">+591 712 345 67</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Créditos -->
+  <div class="modal fade credits-modal" id="creditsModal" tabindex="-1" aria-labelledby="creditsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="creditsTitle">Créditos de imágenes</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p class="credits-intro">Morenas Food es un proyecto demostrativo. Las fotografías de los platos se usan con licencias Creative Commons y las imágenes de ambiente provienen de Unsplash.</p>
+          <ul class="credits-list">
+            <li><strong>Sajta de pollo Paceño</strong><span>R. Iván Mamani Cachi · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Sajta_de_pollo_Pace%C3%B1o.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></li>
+            <li><strong>Silpancho Cochabambino</strong><span>Alexander Vaca Rivas · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Silpancho_Cochabambino.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></li>
+            <li><strong>Milanesa</strong><span>Marcelo Teson · CC BY 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Milanesa.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></li>
+            <li><strong>Caldo de gallina</strong><span>Gonza Rizzo · CC BY-SA 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Caldo_de_gallina_06092009.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></li>
+            <li><strong>Pollo a la brasa</strong><span>Dtarazona · Dominio público · <a href="https://commons.wikimedia.org/wiki/File:Pollo_a_la_brasa_pierna_con_papas.JPG" target="_blank" rel="noopener">Wikimedia Commons</a></span></li>
+            <li><strong>Chicharrón paceño</strong><span>N1ny4 t · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Chicharr%C3%B3n_servido_en_el_restaurante_Mikuy,_El_Alto,_Bolivia_01.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></li>
+            <li><strong>Salteña</strong><span>Futbolcochabambarojo · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Salte%C3%B1a_interior.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></li>
+            <li><strong>Fotografías de pollo y ambiente</strong><span>Unsplash · <a href="https://unsplash.com/license" target="_blank" rel="noopener">Licencia Unsplash</a></span></li>
+            <li><strong>Mapa del local</strong><span>© OpenStreetMap contributors · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span></li>
+          </ul>
+          <p class="credits-intro mb-0">Las licencias CC BY y CC BY-SA permiten el uso con atribución. Los platos y precios son referenciales para esta demostración.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-stack" id="toastStack" aria-live="polite" aria-atomic="false"></div>
+
+  <a class="whatsapp-float" href="https://wa.me/59171234567?text=Hola%20Morenas%20Food%2C%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+    <span class="whatsapp-float__label">¿Pedimos?</span>
+  </a>
+
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
